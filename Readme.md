@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Антон Кольцов](https://up.htmlacademy.ru/adaptive/27/user/1866847).
-* Наставник: `Неизвестно`.
+* Наставник: [Олег Цыганов](https://htmlacademy.ru/profile/olegtsyganov).
 
 ---
 
