@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body class="page__body">
+  <div class="modal__wrapper">
+    <header class="modal-header">
+      <a class="modal-header__logo" href="index.html">
+        <img class="modal-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седона.">
+      </a>
+      <nav class="modal-nav">
+        <button class="modal-nav__toggle" type="button"><span class="visually-hidden">Открыть меню.</span>
+        </button>
+        <div class="modal-nav__wrapper">
+          <ul class="modal-nav__list site-list">
+            <li class="site-list__item site-list__item--current">
+              <a>
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">
+                Фото и видео
+              </a>
+            </li>
+          </ul>
+          <ul class="modal-nav__list user-list">
+            <li class="user-list__item">
+              <a href="#">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a href="#">
+                HTML-academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="hero">
+      <h1 class="visually-hidden">
+        Надпись и картинка Седона.
+      </h1>
+    </div>
+    <section class="introduce">
+      <div class="introduce__wrapper">
+        <form class="introduce__search" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="introduce__group introduce__group--data">
+            <legend class="introduce__title">Представьтесь:</legend>
+            <label class="introduce__search--text introduce-name" for="name">Имя*:</label>
+            <input class="field introduce__input introduce-name-input" id="name" type="text" name="name"
+              placeholder="Петр" required>
+            <label class="introduce__search--text introduce-surname" for="surname">Фамилия*:</label>
+            <input class="field introduce__input introduce-surname-input" id="surname" type="text" name="surname"
+              placeholder="Пустота" required>
+            <label class="introduce__search--text introduce-patronymic" for="patronymic">Отчество:</label>
+            <input class="field introduce__input introduce-patronymic-input" id="patronymic" type="text"
+              name="patronymic" placeholder="Викторович">
+          </fieldset>
+          <fieldset class="introduce__group introduce__group--contacts">
+            <legend class="introduce__title">Контактная информация:</legend>
+            <label class="introduce__search--text introduce-telephone" for="telephone">Контактный телефон*:</label>
+            <input class="field introduce__input introduce-telephone-input" id="telephone" type="text" name="telephone"
+              placeholder="Введите телефон" required>
+            <label class="introduce__search--text introduce-mail" for="mail">Электронная почта*:</label>
+            <input class="field introduce__input introduce-mail-input" id="mail" type="text" name="mail"
+              placeholder="Введите e-mail" required>
+          </fieldset>
+          <fieldset class="introduce__group introduce__group--impression">
+            <legend class="introduce__title">Ваше общее впечатление:</legend>
+            <ul class="introduce__list">
+              <li class="introduce__item">
+                <label class="introduce__search--text introduce-positive">
+                  <input class="field introduce__input introduce-positive-input" id="positive" type="radio"
+                    name="positive" value="1" checked>
+                  <span class="introduce__label">
+                    Скорее положительное
+                  </span>
+                </label>
+              </li>
+              <li class="introduce__item">
+                <label class="introduce__search--text introduce-negative">
+                  <input class="field introduce__input introduce-negative-input" id="negative" type="radio"
+                    name="negative" value="2">
+                  <span class="introduce__label">
+                    Скорее отрицательное
+                  </span>
+                </label>
+              </li>
+              <li class="introduce__item">
+                <label class="introduce__search--text introduce-difficult">
+                  <input class="field introduce__input introduce-difficult-input" id="difficult" type="radio"
+                    name="difficult" value="3">
+                  <span class="introduce__label">
+                    Затрудняюсь ответить
+                  </span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="introduce__group introduce__group--attractions">
+            <legend class="introduce__title">Посещенные достопримечательности:</legend>
+            <ul class="introduce__list">
+              <li class="introduce__item">
+                <label class="introduce__search--text introduce-bridge">
+                  <input class="field introduce__input introduce-bridge-input" id="bridge" type="checkbox" name="bridge"
+                    checked>
+                  <span class="introduce__label">
+                    Мост Дьявола
+                  </span>
+                </label>
+              </li>
+              <li class="introduce__item">
+                <label class="introduce__search--text introduce-bell">
+                  <input class="field introduce__input introduce-bell-input" id="bell" type="checkbox" name="bell"
+                    checked>
+                  <span class="introduce__label">
+                    Гора-Колокол
+                  </span>
+                </label>
+              </li>
+              <li class="introduce__item">
+                <label class="introduce__search--text introduce-park">
+                  <input class="field introduce__input introduce-park-input" id="park" type="checkbox" name="park"
+                    checked>
+                  <span class="introduce__label">
+                    Слайд-парк
+                  </span>
+                </label>
+              </li>
+              <li class="introduce__item">
+                <label class="introduce__search--text introduce-rocks">
+                  <input class="field introduce__input introduce-rocks-input" id="rocks" type="checkbox" name="rocks">
+                  <span class="introduce__label">
+                    Красные скалы
+                  </span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="introduce__group introduce__group--emotions">
+            <h2 class="introduce__title">Опишите свои эмоции:</h2>
+            <textarea class="introduce__message" id="message" name="message"
+              placeholder="Опишите подробно все свои восторги " spellcheck="true"></textarea>
+          </div>
+          <button class="introduce__button button" type="submit">Отправить отзыв</button>
+          <p class="introduce__require">* — обязательные поля</p>
+        </form>
+      </div>
+    </section>
+    <footer class="modal-footer">
+      <div class="modal-footer__wrapper">
+        <div class="modal-footer__contacts contacts">
+          <a class="visit" href="#">#visitsedona</a>
+        </div>
+        <div class="modal-footer__social social">
+          <h4 class="visually-hidden">Социальные сети.</h4>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="#">Мы в Вконтакте.</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="#">Мы в Телеграме.</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">Мы в Ютобе.</a>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="#">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
