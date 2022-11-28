@@ -7,179 +7,162 @@
 </head>
 
 <body class="page__body">
-  <div class="modal__wrapper">
-    <header class="modal-header">
-      <a class="modal-header__logo" href="index.html">
-        <img class="modal-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седона.">
-      </a>
-      <nav class="modal-nav">
-        <button class="modal-nav__toggle" type="button"><span class="visually-hidden">Открыть меню.</span>
-        </button>
-        <div class="modal-nav__wrapper">
-          <ul class="modal-nav__list site-list">
-            <li class="site-list__item site-list__item--current">
-              <a>
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html">
-                Фото и видео
-              </a>
-            </li>
-          </ul>
-          <ul class="modal-nav__list user-list">
-            <li class="user-list__item">
-              <a href="#">
-                Форма отзыва
-              </a>
-            </li>
-            <li class="user-list__item">
-              <a href="#">
-                HTML-academy
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <div class="hero">
-      <h1 class="visually-hidden">
-        Надпись и картинка Седона.
-      </h1>
+  <header class="main-header">
+    <a class="main-header__logo" href="index.html">
+      <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седона.">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
+      </button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--current">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">Форма отзыва</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">HTML-academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="hero">
+    <img class="hero__image-sedona" src="img/catalog-page/sedona.jpg" width="229" height="39" alt="welcome sedona.">
+    <div class="hero__slogan">
+      <h1 class="hero__title">Оставьте свой отзыв</h1>
+      <p class="hero__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+        достопримечательностях</p>
     </div>
-    <section class="introduce">
-      <div class="introduce__wrapper">
-        <form class="introduce__search" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="introduce__group introduce__group--data">
-            <legend class="introduce__title">Представьтесь:</legend>
-            <label class="introduce__search--text introduce-name" for="name">Имя*:</label>
-            <input class="field introduce__input introduce-name-input" id="name" type="text" name="name"
-              placeholder="Петр" required>
-            <label class="introduce__search--text introduce-surname" for="surname">Фамилия*:</label>
-            <input class="field introduce__input introduce-surname-input" id="surname" type="text" name="surname"
-              placeholder="Пустота" required>
-            <label class="introduce__search--text introduce-patronymic" for="patronymic">Отчество:</label>
-            <input class="field introduce__input introduce-patronymic-input" id="patronymic" type="text"
-              name="patronymic" placeholder="Викторович">
-          </fieldset>
-          <fieldset class="introduce__group introduce__group--contacts">
-            <legend class="introduce__title">Контактная информация:</legend>
-            <label class="introduce__search--text introduce-telephone" for="telephone">Контактный телефон*:</label>
-            <input class="field introduce__input introduce-telephone-input" id="telephone" type="text" name="telephone"
-              placeholder="Введите телефон" required>
-            <label class="introduce__search--text introduce-mail" for="mail">Электронная почта*:</label>
-            <input class="field introduce__input introduce-mail-input" id="mail" type="text" name="mail"
-              placeholder="Введите e-mail" required>
-          </fieldset>
-          <fieldset class="introduce__group introduce__group--impression">
-            <legend class="introduce__title">Ваше общее впечатление:</legend>
-            <ul class="introduce__list">
-              <li class="introduce__item">
-                <label class="introduce__search--text introduce-positive">
-                  <input class="field introduce__input introduce-positive-input" id="positive" type="radio"
-                    name="positive" value="1" checked>
-                  <span class="introduce__label">
-                    Скорее положительное
-                  </span>
-                </label>
-              </li>
-              <li class="introduce__item">
-                <label class="introduce__search--text introduce-negative">
-                  <input class="field introduce__input introduce-negative-input" id="negative" type="radio"
-                    name="negative" value="2">
-                  <span class="introduce__label">
-                    Скорее отрицательное
-                  </span>
-                </label>
-              </li>
-              <li class="introduce__item">
-                <label class="introduce__search--text introduce-difficult">
-                  <input class="field introduce__input introduce-difficult-input" id="difficult" type="radio"
-                    name="difficult" value="3">
-                  <span class="introduce__label">
-                    Затрудняюсь ответить
-                  </span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="introduce__group introduce__group--attractions">
-            <legend class="introduce__title">Посещенные достопримечательности:</legend>
-            <ul class="introduce__list">
-              <li class="introduce__item">
-                <label class="introduce__search--text introduce-bridge">
-                  <input class="field introduce__input introduce-bridge-input" id="bridge" type="checkbox" name="bridge"
-                    checked>
-                  <span class="introduce__label">
-                    Мост Дьявола
-                  </span>
-                </label>
-              </li>
-              <li class="introduce__item">
-                <label class="introduce__search--text introduce-bell">
-                  <input class="field introduce__input introduce-bell-input" id="bell" type="checkbox" name="bell"
-                    checked>
-                  <span class="introduce__label">
-                    Гора-Колокол
-                  </span>
-                </label>
-              </li>
-              <li class="introduce__item">
-                <label class="introduce__search--text introduce-park">
-                  <input class="field introduce__input introduce-park-input" id="park" type="checkbox" name="park"
-                    checked>
-                  <span class="introduce__label">
-                    Слайд-парк
-                  </span>
-                </label>
-              </li>
-              <li class="introduce__item">
-                <label class="introduce__search--text introduce-rocks">
-                  <input class="field introduce__input introduce-rocks-input" id="rocks" type="checkbox" name="rocks">
-                  <span class="introduce__label">
-                    Красные скалы
-                  </span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <div class="introduce__group introduce__group--emotions">
-            <h2 class="introduce__title">Опишите свои эмоции:</h2>
-            <textarea class="introduce__message" id="message" name="message"
-              placeholder="Опишите подробно все свои восторги " spellcheck="true"></textarea>
-          </div>
-          <button class="introduce__button button" type="submit">Отправить отзыв</button>
-          <p class="introduce__require">* — обязательные поля</p>
-        </form>
-      </div>
-    </section>
-    <footer class="modal-footer">
-      <div class="modal-footer__wrapper">
-        <div class="modal-footer__contacts contacts">
-          <a class="visit" href="#">#visitsedona</a>
-        </div>
-        <div class="modal-footer__social social">
-          <h4 class="visually-hidden">Социальные сети.</h4>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="#">Мы в Вконтакте.</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--telegram" href="#">Мы в Телеграме.</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="#">Мы в Ютобе.</a>
-            </li>
-          </ul>
-        </div>
-        <div class="modal-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="#">HTML Academy</a>
-        </div>
-      </div>
-    </footer>
   </div>
+  <section class="introduce">
+    <h2 class="vissualy-hidden">Данные.</h2>
+    <form class="introduce__form" action="https://echo.htmlacademy.ru/" method="post">
+      <fieldset class="introduce__group">
+        <legend class="introduce__title">Представьтесь:</legend>
+        <label class="introduce__label" for="name">Имя*:</label>
+        <input class="introduce__input" id="name" type="text" name="name" placeholder="Петр" required>
+        <label class="introduce__label" for="surname">Фамилия*:</label>
+        <input class="introduce__input" id="surname" type="text" name="surname" placeholder="Пустота" required>
+        <label class="introduce__label" for="patronymic">Отчество:</label>
+        <input class="introduce__input" id="patronymic" type="text" name="patronymic" placeholder="Викторович">
+      </fieldset>
+      <fieldset class="introduce__group">
+        <legend class="introduce__title">Контактная информация:</legend>
+        <label class="introduce__label" for="telephone">Контактный телефон*:</label>
+        <input class="introduce__input" id="telephone" type="tel" name="telephone" placeholder="Введите телефон"
+          required>
+        <label class="introduce__label" for="mail">Электронная почта*:</label>
+        <input class="introduce__input" id="mail" type="email" name="mail" placeholder="Введите e-mail" required>
+      </fieldset>
+      <fieldset class="introduce__group">
+        <legend class="introduce__title">Ваше общее впечатление:</legend>
+        <ul class="introduce__list">
+          <li class="introduce__item">
+            <label class="introduce__radio-label">
+              <input class="introduce__radio-input" id="positive" type="radio" name="impress" checked>
+              <span class="introduce__radio-text">Скорее положительное</span>
+            </label>
+          </li>
+          <li class="introduce__item">
+            <label class="introduce__radio-label">
+              <input class="introduce__radio-input" id="negative" type="radio" name="impress">
+              <span class="introduce__radio-text">Скорее отрицательное</span>
+            </label>
+          </li>
+          <li class="introduce__item">
+            <label class="introduce__radio-label">
+              <input class="introduce__radio-input" id="difficult" type="radio" name="impress">
+              <span class="introduce__radio-text">Затрудняюсь ответить</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="introduce__group">
+        <legend class="introduce__title">Посещенные достопримечательности:</legend>
+        <ul class="introduce__list">
+          <li class="introduce__item">
+            <label class="introduce__checkbox-label">
+              <input class="introduce__checkbox-input" id="bridge" type="checkbox" name="bridge" checked>
+              <span class="introduce__checkbox-text">Мост Дьявола</span>
+            </label>
+          </li>
+          <li class="introduce__item">
+            <label class="introduce__checkbox-label">
+              <input class="introduce__checkbox-input" id="bell" type="checkbox" name="bell" checked>
+              <span class="introduce__checkbox-text">Гора-Колокол</span>
+            </label>
+          </li>
+          <li class="introduce__item">
+            <label class="introduce__checkbox-label">
+              <input class="introduce__checkbox-input" id="park" type="checkbox" name="park" checked>
+              <span class="introduce__checkbox-text">Слайд-парк</span>
+            </label>
+          </li>
+          <li class="introduce__item">
+            <label class="introduce__checkbox-label">
+              <input class="introduce__checkbox-input" id="rocks" type="checkbox" name="rocks">
+              <span class="introduce__checkbox-text">Красные скалы</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="introduce__group">
+        <legend class="introduce__title">Опишите свои эмоции:</legend>
+        <textarea class="introduce__message" id="message" name="message"
+          placeholder="Опишите подробно все свои восторги " spellcheck="true"></textarea>
+      </fieldset>
+      <button class="introduce__button button" type="submit">Отправить отзыв</button>
+      <p class="introduce__require">* — обязательные поля</p>
+    </form>
+  </section>
+  <footer class="main-footer">
+    <span class="main-footer__hashtag">#visitsedona</span>
+    <ul class="main-footer__social social">
+      <li class="social__item">
+        <a class="social__link social__link--vkontakte" href="#">
+          <span class="visually-hidden">Мы Вконтакте.</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--telegram" href="#">
+          <span class="visually-hidden">Мы в Телеграме.</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="#">
+          <span class="visually-hidden">Мы в Ютобе.</span>
+        </a>
+      </li>
+    </ul>
+    <a class="main-footer__copyright" href="#">
+      <span class="main-footer__copyright-text">Разработано</span>
+      <svg class="main-footer__copyright-image" width="27" height="34" viewBox="0 0 60 60">
+        <path fill="#000000"
+          d="M30.2 5H30L10.3 7.1v36.2L30 55l19.7-11.7V7.1L30.2 5zm17 36.8L30 52 12.8 41.8V27l17.1 10.2V39l-11.7-7v1.8L30 40.9v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8L29.9 12.8 12.8 23V9.4L30 7.6l17.2 1.8V23z" />
+      </svg>
+    </a>
+  </footer>
+  <!--Модальное сообщение с ошибкой при отправке отзыва
+  <div class="modal">
+    <h3 class="modal__title">Что-то пошло не так!</h3>
+    <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="modal__button button" type="submit">Ок</button>
+  </div>
+  -->
+
+  <!--Модальное сообщение об отправке отзыва
+  <div class="modal-shipped">
+    <h3 class="modal-shipped__title">Ваш отзыв отправлен!</h3>
+    <p class="modal-shipped__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
+      опубликуем его на сайте.</p>
+    <button class="modal-shipped__button button" type="submit">Закрыть окно</button>
+  </div>
+  -->
 </body>
 
 </html>
