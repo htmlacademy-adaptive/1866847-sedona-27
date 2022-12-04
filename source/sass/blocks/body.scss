@@ -1,0 +1,14 @@
+.container-wrapper {
+  background-color: $white;
+}
+
+.page__body {
+  @include fontsizes(400, 14px, 21px);
+  width: 320px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  color: $black;
+  background-color: $lightred;
+}
+

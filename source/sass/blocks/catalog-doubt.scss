@@ -1,0 +1,22 @@
+.doubt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.doubt__wrapper {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 17px 26px 38px 28px;
+}
+
+.doubt__title {
+  @include fontsizes(700, 18px, 26px);
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+.doubt__description {
+  color: $lightblack;
+  margin: 0;
+}

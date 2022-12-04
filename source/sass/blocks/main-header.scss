@@ -1,0 +1,10 @@
+.main-nav__list {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.main-nav__link {
+  @include fontsizes(700, 14px, 21px);
+  color: $black;
+  text-decoration: none;
+}

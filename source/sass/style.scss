@@ -1,1 +1,15 @@
-// Начните писать стили здесь
+@import "fonts.scss";
+@import "mixin.scss";
+@import "global.scss";
+@import "variables.scss";
+@import "./blocks/body.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/advantages-sub.scss";
+@import "./blocks/advantages-inner.scss";
+@import "./blocks/appointment.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/catalog-cards.scss";
+@import "./blocks/catalog-doubt.scss";
+@import "./blocks/hero-form.scss";
