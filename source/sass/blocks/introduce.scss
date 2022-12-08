@@ -1,0 +1,135 @@
+.introduce__group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: none;
+  border-bottom: 1px solid $verylightgray;
+  padding: 20px 20px 24px;
+  margin: 0;
+}
+
+.introduce__group:last-of-type {
+  border-bottom: none;
+}
+
+.introduce__group--present {
+  padding-bottom: 39px;
+}
+
+.introduce__group--contacts {
+  padding-bottom: 34px;
+}
+
+.introduce__group--impression {
+  padding-bottom: 24px;
+}
+
+.introduce__title {
+  @include fontsizes(700, 18px, 26px);
+  text-align: center;
+  padding: 0;
+  padding-top: 24px;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.introduce__label {
+  color: $lightblack;
+  margin-left: 16px;
+  text-transform: uppercase;
+}
+
+.introduce__input {
+  @include fontsizes(700, 18px, 26px);
+  border: none;
+  outline: none;
+  background-color: $lightgray;
+  color: $black;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.introduce__input:last-of-type {
+  margin-bottom: 0;
+}
+
+.introduce__list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 16px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.introduce__radio-text {
+  @include fontsizes(700, 18px, 26px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.introduce__radio-text::before {
+  position: relative;
+  content: "";
+  display: block;
+  margin-right: 16px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: $lightgray;
+  background-repeat: no-repeat;
+}
+
+.introduce__group .introduce__radio-input:checked + .introduce__radio-text::before {
+  background-image: url("../../img/catalog-page/icons-radio.svg");
+  background-position: center;
+}
+
+.introduce__checkbox-text {
+  @include fontsizes(700, 18px, 26px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.introduce__checkbox-text::before {
+  position: relative;
+  content: "";
+  display: block;
+  margin-right: 16px;
+  width: 46px;
+  height: 46px;
+  border-radius: 4px;
+  background: $lightgray;
+  background-repeat: no-repeat;
+}
+
+.introduce__group .introduce__checkbox-input:checked + .introduce__checkbox-text::before {
+  background-image: url("../../img/catalog-page/icons-checkbox.svg");
+  background-position: center;
+}
+
+.introduce__message {
+  @include fontsizes(700, 18px, 26px);
+  border: none;
+  background: $lightgray;
+  padding: 16px;
+  margin-bottom: 56px;
+  min-height: 118px;
+  resize: none;
+}
+
+.introduce__button {
+  font-family: $main-font;
+  padding: 16px 49px;
+  text-align: start;
+  margin-bottom: 3px;
+}
+
+.introduce__require {
+  text-align: end;
+  text-transform: uppercase;
+  margin: 0;
+  color: $mediumlightgrey;
+}
