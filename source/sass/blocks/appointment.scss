@@ -1,34 +1,19 @@
 .appointment {
   text-align: center;
-  padding-top: 38px;
-  padding-bottom: 49px;
+  padding: 38px 18px 49px;
   text-transform: uppercase;
 }
 
 .appointment__title {
   @include fontsizes(700, 21px, 26px);
-  margin: auto;
-  margin-bottom: 18px;
+  margin: 0 0 21px;
   text-transform: uppercase;
 }
 
 .appointment__description {
-  margin: auto;
-  margin-bottom: 32px;
+  margin: 0 0 32px;
   text-align: center;
   color: $lightblack;
-}
-
-.button {
-  @include fontsizes(700, 21px, 26px);
-  color: $white;
-  background-color: $blue;
-  text-align: center;
-  box-sizing: border-box;
-  text-transform: uppercase;
-  text-decoration: none;
-  border: none;
-  display: inline-block;
 }
 
 .appointment__search {

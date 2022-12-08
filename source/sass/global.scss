@@ -1,3 +1,23 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: content;
+}
+
+a {
+  text-decoration: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

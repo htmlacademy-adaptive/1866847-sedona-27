@@ -1,17 +1,16 @@
 .main-footer {
   display: flex;
   flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
   padding: 39px 0 23px 0;
   text-align: center;
-  margin: auto;
 }
 
 .main-footer__hashtag {
   @include fontsizes(700, 21px, 26px);
   text-transform: uppercase;
   color: $black;
-  margin: auto;
   margin-bottom: 34px;
 }
 
@@ -20,9 +19,8 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: auto;
+  margin: 0 0 40px;
   padding: 0;
-  margin-bottom: 40px;
   gap: 6px;
 }
 
@@ -30,13 +28,11 @@
   width: 48px;
   height: 48px;
   background-color: $blue;
-  margin: auto;
 }
 
 .main-footer__copyright {
   text-decoration: none;
   color: $black;
-  margin: auto;
   text-align: center;
   text-transform: uppercase;
 }
