@@ -20,3 +20,55 @@
   color: $lightblack;
   margin: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .doubt__wrapper {
+    padding: 58px 162px 66px 161px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .doubt__title {
+    @include fontsizes(700, 30px, 26px);
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .doubt__description {
+    margin-bottom: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .doubt__wrapper {
+    padding: 62px 378px 64px 377px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .doubt__video {
+    width: 84.37%;
+    height: 500px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .doubt {
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .doubt__video {
+    width: 66.66%;
+    height: 500px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .doubt {
+    padding-bottom: 0;
+  }
+}

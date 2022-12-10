@@ -29,7 +29,6 @@
 
 .hero__title {
   @include fontsizes(700, 18px, 26px);
-  width: 284px;
   margin: auto;
   margin-bottom: 35px;
 }
@@ -88,4 +87,108 @@
 
 .hero__slogan--form .hero__title {
   margin-bottom: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .hero__transition {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero__slogan {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 48px 124px 55px 124px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero__title {
+    width: 520px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $mobile-width-only) {
+  .hero__transfer {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero__transfer {
+    display: inline-block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero__slogan {
+    padding: 59px 359px 44px 357px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero__title {
+    @include fontsizes(700, 21px, 26px);
+    width: 484px;
+  }
+}
+
+.hero__title-catalog {
+  @include fontsizes(700, 18px, 26px);
+  margin: 0 0 23px;
+}
+
+@media (min-width: $tablet-width) {
+  .hero__slogan--catalog {
+    padding: 66px 155px 67px;
+    border: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero__title-catalog {
+    @include fontsizes(700, 30px, 26px);
+    margin-bottom: 46px;
+  }
+}
+
+.hero__discription-catalog {
+  margin: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .hero__slogan--catalog {
+    padding: 100px 372px 65px 370px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero__discription-catalog {
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero__slogan--form {
+    padding: 64px 166px 102px 167px;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero__slogan--form .hero__title {
+    @include fontsizes(700, 30px, 26px);
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero__slogan--form {
+    padding: 115px 384px 67px 382px;
+  }
 }

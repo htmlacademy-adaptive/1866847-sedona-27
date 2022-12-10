@@ -29,3 +29,154 @@
 .cards__like {
   @include fontsizes(700, 14px, 21px);
 }
+
+@media (min-width: $tablet-width) {
+  .cards {
+    padding: 0 60px 0 60px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .cards__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .cards__item {
+    width: 50%;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .cards__item--full {
+    width: 100%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .cards__image {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .cards__image-highway {
+    height: 400px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .cards__text {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80px;
+    padding: 22px 20px 15px 20px;
+    background-color: $lightgray;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .cards__item:nth-child(3) .cards__text {
+    background-color: $WhiteSmoke;
+    padding-left: 21px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .cards__title {
+    width: 100%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .cards__author {
+    margin: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .cards__like {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    right: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cards {
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cards__text {
+    background: rgba(0, 0, 0, 0.3);
+    top: -80px;
+    color: $white;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cards__author {
+    color: $white;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cards__item:nth-child(3) .cards__text {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 17px 20px 17px 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cards__image {
+    width: 400px;
+    height: 267px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cards__item {
+    width: 33.33%;
+    height: 267px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cards__image-highway {
+    width: 1200px;
+    height: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cards__item--full {
+    width: 1200px;
+    height: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cards__text {
+    padding: 22px 20px 15px 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cards__text--indent {
+    padding: 17px 20px 17px 25px;
+    row-gap: 4px;
+  }
+}
