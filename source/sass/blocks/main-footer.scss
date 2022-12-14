@@ -38,6 +38,7 @@
 }
 
 .main-footer__copyright-image {
+  fill: $black;
   vertical-align: middle;
   margin-left: 12px;
 }
@@ -82,13 +83,24 @@
   }
 }
 
-
-.main-footer--catalog .main-footer__copyright-text {
-  width: 121px;
-}
-
 @media (min-width: $desktop-width) {
   .main-footer--catalog {
     padding: 120px 120px 36px 104px;
   }
+}
+
+.main-footer__copyright:hover {
+  color: $blue;
+}
+
+.main-footer__copyright:active {
+  color: $mediumgray;
+}
+
+.main-footer__copyright .main-footer__copyright-image:hover {
+  fill: $blue;
+}
+
+.main-footer__copyright .main-footer__copyright-image:active {
+  fill: $mediumgray;
 }

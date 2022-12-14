@@ -1,28 +1,52 @@
 .hero__welcome {
-  background-image: url("../../img/home-page/hero-spacebar.svg"), url("../../img/home-page/hero-welcome.jpg");
-  margin: 0 auto;
-  padding: 0;
-  color: #ffffff;
-  background-color: #000000;
-  background-repeat: no-repeat, no-repeat;
+  position: relative;
+  background-image: url("../../img/home-page/welcome.jpg");
+  min-height: 389px;
+  background-color: $black;
+  background-repeat: no-repeat;
+  color: $white;
+  background-position: 50% -50px;
+}
+
+.hero__welcome::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  min-height: 57px;
+  background-image: url("../../img/home-page/main-spacebar.svg");
+  background-repeat: no-repeat;
+  color: $white;
   background-position: center bottom;
 }
 
 .hero__image-welcome {
   display: block;
   margin: 0 auto;
-  padding-top: 90px;
-  padding-bottom: 85px;
+  padding: 90px 0 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .hero__welcome {
+    min-height: 518px;
+    background-position: 50%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero__image-welcome {
+    min-width: 461px;
+    margin: 0 auto;
+    padding: 77px 0 34px;
+  }
 }
 
 .hero__welcome--innerpage {
-  height: 158px;
-  background-size: auto 389px;
+  min-height: 158px;
+  background-position: 46% -340px;
 }
 
 .hero__image-sedona {
-  padding-top: 52px;
-  padding-bottom: 67px;
+  padding: 52px 0 10px;
   margin: 0 auto;
   display: block;
 }
@@ -97,10 +121,12 @@
 
 @media (min-width: $tablet-width) {
   .hero__slogan {
+    max-width: 520px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 48px 124px 55px 124px;
+    padding: 48px 0 55px 0;
+    margin: 0 auto;
   }
 }
 
@@ -112,10 +138,8 @@
   }
 }
 
-@media (min-width: $mobile-width-only) {
-  .hero__transfer {
-    display: none;
-  }
+.hero__transfer {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -126,8 +150,9 @@
 
 @media (min-width: $desktop-width) {
   .hero__slogan {
-    padding: 59px 359px 44px 357px;
-    margin: 0;
+    max-width: 484px;
+    padding: 59px 0 44px 0;
+    margin: 0 auto;
   }
 }
 
@@ -145,7 +170,9 @@
 
 @media (min-width: $tablet-width) {
   .hero__slogan--catalog {
-    padding: 66px 155px 67px;
+    max-width: 458px;
+    padding: 66px 0 67px;
+    margin: 0 auto;
     border: none;
   }
 }
@@ -163,7 +190,9 @@
 
 @media (min-width: $desktop-width) {
   .hero__slogan--catalog {
-    padding: 100px 372px 65px 370px;
+    max-width: 458px;
+    padding: 100px 0 65px 0;
+    margin: 0 auto;
   }
 }
 
@@ -175,8 +204,26 @@
 
 @media (min-width: $tablet-width) {
   .hero__slogan--form {
-    padding: 64px 166px 102px 167px;
+    max-width: 435px;
+    padding: 64px 0 102px 0;
+    margin: 0 auto;
     border-bottom: none;
+  }
+}
+
+.hero__transfer-form {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .hero__transfer-form {
+    display: inline-block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero__transfer-form {
+    display: none;
   }
 }
 
@@ -189,6 +236,8 @@
 
 @media (min-width: $desktop-width) {
   .hero__slogan--form {
-    padding: 115px 384px 67px 382px;
+    max-width: 434px;
+    padding: 115px 0 67px 0;
+    margin: 0 auto;
   }
 }

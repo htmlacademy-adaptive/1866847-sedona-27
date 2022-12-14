@@ -42,10 +42,8 @@
   }
 }
 
-@media (min-width: $mobile-width-only) {
-  .appointment__transition {
-    display: none;
-  }
+.appointment__transition {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -63,7 +61,8 @@
 
 @media (min-width: $desktop-width) {
   .appointment {
-    padding: 61px 371px 66px;
+    padding: 61px 0 66px;
+    margin: 0 auto;
   }
 }
 

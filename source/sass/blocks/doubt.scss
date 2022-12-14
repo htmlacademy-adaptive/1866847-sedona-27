@@ -23,7 +23,9 @@
 
 @media (min-width: $tablet-width) {
   .doubt__wrapper {
-    padding: 58px 162px 66px 161px;
+    max-width: 445px;
+    padding: 58px 0 66px 0;
+    margin: 0 auto;
   }
 }
 
@@ -42,7 +44,9 @@
 
 @media (min-width: $desktop-width) {
   .doubt__wrapper {
-    padding: 62px 378px 64px 377px;
+    max-width: 445px;
+    padding: 62px 0 64px 0;
+    margin: 0 auto;
   }
 }
 
