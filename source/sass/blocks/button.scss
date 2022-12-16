@@ -8,3 +8,16 @@
   border: none;
   display: inline-block;
 }
+
+.button:hover {
+  background-color: $bluegray;
+}
+
+.button:active {
+  background-color: $darkblue;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled {
+  background-color: $verylightgray;
+}

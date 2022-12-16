@@ -4,7 +4,7 @@
   flex-direction: column;
   border: none;
   border-bottom: 1px solid $verylightgray;
-  padding: 20px 20px 24px;
+  padding: 24px 20px 24px;
   margin: 0;
 }
 
@@ -28,9 +28,19 @@
   @include fontsizes(700, 18px, 26px);
   text-align: center;
   padding: 0;
-  padding-top: 24px;
   margin: auto;
+  margin-bottom: 20px;
   text-transform: uppercase;
+}
+
+.introduce__item {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .introduce__item {
+    width: auto;
+  }
 }
 
 .introduce__label {
@@ -112,19 +122,21 @@
 
 .introduce__message {
   @include fontsizes(700, 18px, 26px);
+  font-family: $main-font;
   border: none;
   background: $lightgray;
   padding: 16px;
   margin-bottom: 56px;
-  min-height: 118px;
   resize: none;
+  min-height: 150px;
 }
 
 .introduce__button {
   font-family: $main-font;
   padding: 16px 49px;
-  text-align: start;
   margin-bottom: 3px;
+  width: 100%;
+  text-align: center;
 }
 
 .introduce__require {
@@ -132,4 +144,356 @@
   text-transform: uppercase;
   margin: 0;
   color: $mediumlightgrey;
+}
+
+@media (min-width: $tablet-width) {
+  .introduce {
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .introduce {
+    padding: 0 120px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .introduce__form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .introduce__group {
+    padding: 0;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .introduce__title {
+    @include fontsizes(700, 21px, 26px);
+    margin: 0;
+    margin-bottom: 28px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .introduce__group--present {
+    width: 50%;
+    padding-right: 43px;
+    border-right: 1px solid $gainsboro;
+    padding-bottom: 26px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .introduce__group--contacts {
+    width: 50%;
+    padding-left: 26px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .introduce__group--contacts .introduce__title {
+    text-align: start;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .introduce__input--contacts {
+    margin-left: 18px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .introduce__label--contacts {
+    margin-left: 34px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .introduce__group--impression {
+    width: 100%;
+    padding: 48px 0 48px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .introduce__group--impression:nth-child(2n) {
+    padding: 0 0 42px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .introduce__group--impression:last-of-type {
+    padding: 0 0 64px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .introduce__group--impression .introduce__title {
+    position: relative;
+    text-align: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .introduce__group--impression .introduce__title::before {
+    left: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .introduce__group--impression .introduce__title::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 19%;
+    height: 1px;
+    background: $gainsboro;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .introduce__group--impression .introduce__title::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 19%;
+    height: 1px;
+    background: $gainsboro;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .introduce__group--impression .introduce__title::after {
+    right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .introduce__group--present {
+    width: 51.45%;
+    padding: 0  63px 15px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .introduce__group--contacts {
+    width: 48.54%;
+    padding-left: 64px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .introduce__group--contacts .introduce__title {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .introduce__input--contacts {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .introduce__label--contacts {
+    margin-left: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .introduce__label--contacts {
+    margin-left: 16px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .introduce__list {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .introduce__list--radio {
+    width: 100%;
+    column-gap: 16px;
+    padding: 0 36px 0 36px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .introduce__radio-text {
+    min-width: 280px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .introduce__group--impression {
+    width: 100%;
+    padding: 56px 0 56px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .introduce__group--impression .introduce__title::after {
+    width: 280px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .introduce__group--impression .introduce__title::before {
+    width: 280px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .introduce__list--radio {
+    column-gap: 28px;
+    padding: 0 53px 0 53px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .introduce__radio-text--indent {
+    min-width: 238px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .introduce__list--checkbox {
+    width: 100%;
+    column-gap: 32px;
+    padding: 0 84px 0 84px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .introduce__checkbox-text {
+    min-width: 224px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .introduce__list--checkbox {
+    column-gap: 64px;
+    padding: 31px 44px 31px 44px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .introduce__checkbox-text--indent {
+    min-width: 153px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .introduce__group--impression:nth-child(2n) {
+    padding: 0 0 56px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .introduce__message {
+    min-height: 160px;
+    margin-bottom: 48px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .introduce__button {
+    width: auto;
+    margin: 0;
+    padding: 16px 71px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .introduce__transfer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .introduce__message {
+    margin: 0 96px 48px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .introduce__button {
+    width: auto;
+    padding: 16px 101px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .introduce__transfer {
+    margin: 0 96px;
+  }
+}
+
+.main-footer--form {
+  padding: 28px 0 23px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer--form {
+    padding: 36px 60px 36px 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer--form {
+    padding: 36px 120px 36px 104px;
+  }
+}
+
+.introduce__input::placeholder {
+  color: $mediumgray;
+}
+
+.introduce__message::placeholder {
+  color: $mediumgray;
+}
+
+.introduce__input:hover {
+  background-color: $verylightgray;
+  color: $black;
+}
+
+.introduce__input:active {
+  background-color: $white;
+  color: $black;
+  border: 4px solid $verylightgray;
+}
+
+.introduce__radio-text:hover::before {
+  background-color: $verylightgray;
+}
+
+.introduce__radio-text:active::before {
+  background-color: $silver;
+  opacity: 0.3;
+}
+
+.introduce__checkbox-text:hover::before {
+  background-color: $verylightgray;
+}
+
+.introduce__checkbox-text:active::before {
+  background-color: $silver;
+  opacity: 0.3;
 }
