@@ -23,11 +23,13 @@
 .cards__author {
   color: $lightblack;
   margin: 0;
-  margin-bottom: 11px;
+  margin-bottom: 16px;
 }
 
 .cards__like {
   @include fontsizes(700, 14px, 21px);
+  position: relative;
+  padding-left: 37px;
 }
 
 @media (min-width: $tablet-width) {
@@ -174,5 +176,33 @@
   .cards__text--indent {
     padding: 17px 20px 17px 25px;
     row-gap: 4px;
+  }
+}
+
+.cards__icon {
+  max-width: 100%;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.cards__like .cards__icon {
+  position: absolute;
+  left: 0;
+  width: 23px;
+  height: 21px;
+  bottom: 2px;
+  fill: $caparol;
+}
+
+@media (min-width: $tablet-width) {
+  .cards__like .cards__icon {
+    left: 6px;
+    bottom: 4px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cards__like .cards__icon {
+    fill: $white;
   }
 }

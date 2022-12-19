@@ -50,11 +50,59 @@
   }
 }
 
+.doubt__presentation {
+  position: relative;
+}
+
+.doubt__button {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.doubt__button::before {
+  position: absolute;
+  content: "";
+  width: 48px;
+  height: 54px;
+  background-color: rgba(255, 255, 255, 0.7);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  clip-path: polygon(0 0, 0% 100%, 100% 50%);
+}
+
+.doubt__video {
+  vertical-align: top;
+}
+
+@media (min-width: $tablet-width) {
+  .doubt__presentation {
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .doubt__button {
+    width: 84.37%;
+    left: 60px;
+  }
+}
 
 @media (min-width: $tablet-width) {
   .doubt__video {
-    width: 84.37%;
-    height: 500px;
+    width: 100%;
+    min-height: 500px;
+    object-fit: cover;
   }
 }
 
@@ -64,15 +112,22 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .doubt__video {
-    width: 66.66%;
-    height: 500px;
-  }
-}
 
 @media (min-width: $desktop-width) {
   .doubt {
     padding-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .doubt__presentation {
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .doubt__button {
+    width: 100%;
+    left: 0;
   }
 }

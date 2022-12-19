@@ -1,5 +1,6 @@
 .button {
   @include fontsizes(700, 21px, 26px);
+  font-family: $main-font;
   color: $white;
   background-color: $blue;
   text-align: center;
