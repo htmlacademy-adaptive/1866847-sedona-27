@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-slace=1">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicons/aple.png">
+  <link rel="manifest" href="./img/favicons/manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -17,7 +21,7 @@
 
       <!-- <nav class="main-nav main-nav--closed main-nav--nojs"> -->
       <!-- <nav class="main-nav main-nav--opened main-nav--nojs"> -->
-      <nav class="main-nav main-nav--opened main-nav--nojs">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
@@ -57,11 +61,16 @@
         <h2 class="visually-hidden">Фотографии.</h2>
         <ul class="cards__list">
           <li class="cards__item cards__item--full">
-            <img class="cards__image cards__image-highway" src="img/catalog-page/highway.jpg" width="280" height="280"
-              alt="Просторы.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog-page/higway/higway-desktop.jpg 1x, img/catalog-page/higway/higway-desktop@2x.jpg 2x" width="1200" height="400">
+              <source media="(min-width: 768px)" srcset="img/catalog-page/higway/higway-tablet.jpg 1x, img/catalog-page/higway/higway-tablet@2x.jpg 2x" width="648" height="400">
+              <img class="cards__image cards__image-highway" src="img/catalog-page/higway/higway.jpg" srcset="img/catalog-page/higway/higway@2x.jpg 2x" width="280" height="280" alt="Просторы.">
+            </picture>
             <div class="cards__text">
+              <div class="cards__wrapper">
               <h3 class="cards__title">Неродные просторы</h3>
               <p class="cards__author">Автор фото: Борис</p>
+            </div>
               <span class="cards__like">
                 <svg class="cards__icon">
                   <use xlink:href="./img/sprite.svg#likes" width="23" height="21"></use>
@@ -70,11 +79,16 @@
             </div>
           </li>
           <li class="cards__item">
-            <img class="cards__image cards__image-vegetation" src="img/catalog-page/vegetation.jpg" width="280"
-              height="280" alt="Растительность.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog-page/vegetation/vegetation-desktop.jpg 1x, img/catalog-page/vegetation/vegetation-desktop@2x.jpg 2x" width="400" height="267">
+              <source media="(min-width: 768px)" srcset="img/catalog-page/vegetation/vegetation-tablet.jpg 1x, img/catalog-page/vegetation/vegetation-tablet@2x.jpg 2x" width="324" height="267">
+              <img class="cards__image cards__image-vegetation" src="img/catalog-page/vegetation/vegetation.jpg" srcset="img/catalog-page/vegetation/vegetation@2x.jpg 2x" width="280" height="280" alt="Растительность.">
+            </picture>
             <div class="cards__text cards__text--indent">
+              <div class="cards__wrapper">
               <h3 class="cards__title">Местная растительность</h3>
               <p class="cards__author">Автор фото: Сергей</p>
+            </div>
               <span class="cards__like">
                 <svg class="cards__icon">
                   <use xlink:href="./img/sprite.svg#likes" width="23" height="21"></use>
@@ -82,11 +96,16 @@
             </div>
           </li>
           <li class="cards__item">
-            <img class="cards__image cards__image-north" src="img/catalog-page/north.jpg" width="280" height="280"
-              alt="Дорога на север.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog-page/north/north-desktop.jpg 1x, img/catalog-page/north/north-desktop@2x.jpg 2x" width="400" height="267">
+              <source media="(min-width: 768px)" srcset="img/catalog-page/north/north-tablet.jpg 1x, img/catalog-page/north/north-tablet@2x.jpg 2x" width="324" height="267">
+              <img class="cards__image cards__image-north" src="img/catalog-page/north/north.jpg" srcset="img/catalog-page/north/north@2x.jpg 2x" width="280" height="280" alt="Дорога на север.">
+            </picture>
             <div class="cards__text cards__text--indent">
+              <div class="cards__wrapper">
               <h3 class="cards__title">Дорога на север</h3>
               <p class="cards__author">Автор фото: Петр</p>
+            </div>
               <span class="cards__like">
                 <svg class="cards__icon">
                   <use xlink:href="./img/sprite.svg#likes" width="23" height="21"></use>
@@ -94,11 +113,16 @@
             </div>
           </li>
           <li class="cards__item">
-            <img class="cards__image cards__image-bridge" src="img/catalog-page/devil's-bridge.jpg" width="280"
-              height="280" alt="Мост дьявола.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog-page/bridge/devil's-bridge-desktop.jpg 1x, img/catalog-page/bridge/devil's-bridge-deskto@2x.jpg 2x" width="400" height="267">
+              <source media="(min-width: 768px)" srcset="img/catalog-page/bridge/devil's-bridge-tablet.jpg 1x, img/catalog-page/bridge/devil's-bridge-tablet@2x.jpg 2x" width="324" height="267">
+              <img class="cards__image cards__image-bridge" src="img/catalog-page/bridge/devil's-bridge.jpg" srcset="img/catalog-page/bridge/devil's-bridge@2x.jpg 2x" width="280" height="280" alt="Мост дьявола.">
+            </picture>
             <div class="cards__text cards__text--indent">
+              <div class="cards__wrapper">
               <h3 class="cards__title">Мост дьявола</h3>
               <p class="cards__author">Автор фото: Антон</p>
+            </div>
               <span class="cards__like">
                 <svg class="cards__icon" width="23" height="21">
                   <use xlink:href="./img/sprite.svg#likes" width="23" height="21"></use>
@@ -118,9 +142,6 @@
           <button class="doubt__button">
             <span class="visually-hidden">Воспроизвести</span>
           </button>
-          <video class="doubt__video" width="280" height="177" poster="./img/catalog-page/video-presentation.jpg">
-            Видео презентация.
-          </video>
         </div>
       </section>
     </main>

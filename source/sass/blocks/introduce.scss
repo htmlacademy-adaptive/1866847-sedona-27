@@ -154,6 +154,7 @@
 
 .introduce__message {
   @include fontsizes(700, 18px, 26px);
+  width: 100%;
   font-family: $main-font;
   border: none;
   background: $lightgray;
@@ -228,6 +229,17 @@
   }
 }
 
+.introduce__input--contacts {
+  width: 100%;
+  padding-right: 65px;
+}
+
+@media (min-width: $tablet-width) {
+  .introduce__input--contacts {
+    width: 93.96%;
+    padding-right: 65px;
+  }
+}
 
 @media (min-width: $tablet-width) {
   .introduce__group--contacts .introduce__title {
@@ -238,6 +250,12 @@
 @media (min-width: $tablet-width) {
   .introduce__group--contacts .introduce__input {
     margin-left: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .introduce__group--contacts .introduce__input {
+    margin: 0;
   }
 }
 
@@ -320,8 +338,14 @@
 
 @media (min-width: $desktop-width) {
   .introduce__group--contacts {
-    width: 48.54%;
+    max-width: 466px;
     padding-left: 64px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .introduce__group--contacts .introduce__subgroup {
+    max-width: 402px;
   }
 }
 
@@ -333,6 +357,7 @@
 
 @media (min-width: $desktop-width) {
   .introduce__input--contacts {
+    width: 100%;
     margin-left: 0;
   }
 }
@@ -460,7 +485,8 @@
 
 @media (min-width: $desktop-width) {
   .introduce__message {
-    margin: 0 96px 48px;
+    width: 100%;
+    margin-bottom: 48px;
   }
 }
 
@@ -472,8 +498,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .introduce__transfer {
-    margin: 0 96px;
+  .introduce__wrapper {
+    padding: 0 96px;
   }
 }
 

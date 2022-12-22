@@ -2,12 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0 20px;
 }
 
 .doubt__wrapper {
+  max-width: 266px;
   text-align: center;
   text-transform: uppercase;
-  padding: 17px 26px 38px 28px;
+  padding: 17px 0 38px;
 }
 
 .doubt__title {
@@ -52,6 +54,24 @@
 
 .doubt__presentation {
   position: relative;
+  width: 100%;
+  height: 177px;
+  background-image: url("../../img/catalog-page/video.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/catalog-page/video@2x.jpg");
+    background-size: 100% auto;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .doubt__presentation {
+    height: 500px;
+    background-position: 50%;
+    background-size: 800px auto;
+  }
 }
 
 .doubt__button {
@@ -81,53 +101,14 @@
   clip-path: polygon(0 0, 0% 100%, 100% 50%);
 }
 
-.doubt__video {
-  vertical-align: top;
-}
-
-@media (min-width: $tablet-width) {
-  .doubt__presentation {
-    padding: 0 60px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .doubt__button {
-    width: 84.37%;
-    left: 60px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .doubt__video {
-    width: 100%;
-    min-height: 500px;
-    object-fit: cover;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .doubt {
-    padding-bottom: 40px;
+    padding: 0 60px 40px 60px;
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .doubt {
-    padding-bottom: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .doubt__presentation {
-    padding: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .doubt__button {
-    width: 100%;
-    left: 0;
+    padding: 0 201px 0 199px;
   }
 }

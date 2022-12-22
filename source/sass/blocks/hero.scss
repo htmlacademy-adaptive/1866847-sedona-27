@@ -5,7 +5,13 @@
   background-color: $black;
   background-repeat: no-repeat;
   color: $white;
-  background-position: 50% -50px;
+  background-position: 50% 100%;
+  background-size: 903px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/home-page/welcome@2x.jpg");
+    background-size: 903px auto;
+  }
 }
 
 .hero__welcome::after {
@@ -23,13 +29,14 @@
 .hero__image-welcome {
   display: block;
   margin: 0 auto;
-  padding: 90px 0 27px;
+  padding: 90px 0 85px;
 }
 
 @media (min-width: $tablet-width) {
   .hero__welcome {
     min-height: 518px;
     background-position: 50%;
+    background-size: 1200px auto;
   }
 }
 
@@ -51,13 +58,14 @@
 
 .hero__welcome--innerpage {
   min-height: 158px;
-  background-position: 46% 93%;
+  background-position: 50% 100%;
 }
 
 @media (min-width: $tablet-width) {
   .hero__welcome--innerpage {
     min-height: 290px;
     background-position: 50% 100%;
+    background-size: 1200px auto;
   }
 }
 
