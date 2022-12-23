@@ -26,6 +26,7 @@
 
 .introduce__title {
   @include fontsizes(700, 18px, 26px);
+  width: 100%;
   text-align: center;
   padding: 0;
   margin: auto;
@@ -49,6 +50,7 @@
   text-transform: uppercase;
 }
 
+
 .introduce__input {
   @include fontsizes(700, 18px, 26px);
   border: none;
@@ -70,6 +72,36 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.introduce__group--contacts .introduce__subgroup {
+  position: relative;
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.introduce__group--contacts .introduce__subgroup::before {
+  position: absolute;
+  content: "";
+  background: $summitsilver url("../../img/icons/phone.svg") center;
+  background-repeat: no-repeat;
+  width: 58px;
+  height: 58px;
+  top: 21px;
+  right: 0;
+  display: block;
+}
+
+.introduce__group--contacts .introduce__subgroup--email::before {
+  background: $summitsilver url("../../img/icons/email.svg") center;
+  background-repeat: no-repeat;
+}
+
+.introduce__group--contacts .introduce__subgroup--email {
+  margin-bottom: 0;
 }
 
 .introduce__radio-text {
@@ -122,6 +154,7 @@
 
 .introduce__message {
   @include fontsizes(700, 18px, 26px);
+  width: 100%;
   font-family: $main-font;
   border: none;
   background: $lightgray;
@@ -196,6 +229,17 @@
   }
 }
 
+.introduce__input--contacts {
+  width: 100%;
+  padding-right: 65px;
+}
+
+@media (min-width: $tablet-width) {
+  .introduce__input--contacts {
+    width: 93.96%;
+    padding-right: 65px;
+  }
+}
 
 @media (min-width: $tablet-width) {
   .introduce__group--contacts .introduce__title {
@@ -204,8 +248,14 @@
 }
 
 @media (min-width: $tablet-width) {
-  .introduce__input--contacts {
+  .introduce__group--contacts .introduce__input {
     margin-left: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .introduce__group--contacts .introduce__input {
+    margin: 0;
   }
 }
 
@@ -288,8 +338,14 @@
 
 @media (min-width: $desktop-width) {
   .introduce__group--contacts {
-    width: 48.54%;
+    max-width: 466px;
     padding-left: 64px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .introduce__group--contacts .introduce__subgroup {
+    max-width: 402px;
   }
 }
 
@@ -301,6 +357,7 @@
 
 @media (min-width: $desktop-width) {
   .introduce__input--contacts {
+    width: 100%;
     margin-left: 0;
   }
 }
@@ -428,7 +485,8 @@
 
 @media (min-width: $desktop-width) {
   .introduce__message {
-    margin: 0 96px 48px;
+    width: 100%;
+    margin-bottom: 48px;
   }
 }
 
@@ -440,8 +498,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .introduce__transfer {
-    margin: 0 96px;
+  .introduce__wrapper {
+    padding: 0 96px;
   }
 }
 

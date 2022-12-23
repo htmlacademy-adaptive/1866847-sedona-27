@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-slace=1">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicons/aple.png">
+  <link rel="manifest" href="./img/favicons/manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,7 +18,10 @@
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седона.">
       </a>
-      <nav class="main-nav main-nav--opened main-nav--nojs">
+
+      <!-- <nav class="main-nav main-nav--closed main-nav--nojs"> -->
+      <!-- <nav class="main-nav main-nav--opened main-nav--nojs"> -->
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
@@ -54,39 +61,72 @@
         <h2 class="visually-hidden">Фотографии.</h2>
         <ul class="cards__list">
           <li class="cards__item cards__item--full">
-            <img class="cards__image cards__image-highway" src="img/catalog-page/highway.jpg" width="280" height="280"
-              alt="Просторы.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog-page/higway/higway-desktop.jpg 1x, img/catalog-page/higway/higway-desktop@2x.jpg 2x" width="1200" height="400">
+              <source media="(min-width: 768px)" srcset="img/catalog-page/higway/higway-tablet.jpg 1x, img/catalog-page/higway/higway-tablet@2x.jpg 2x" width="648" height="400">
+              <img class="cards__image cards__image-highway" src="img/catalog-page/higway/higway.jpg" srcset="img/catalog-page/higway/higway@2x.jpg 2x" width="280" height="280" alt="Просторы.">
+            </picture>
             <div class="cards__text">
+              <div class="cards__wrapper">
               <h3 class="cards__title">Неродные просторы</h3>
               <p class="cards__author">Автор фото: Борис</p>
-              <span class="cards__like">Лайки 1350</span>
+            </div>
+              <span class="cards__like">
+                <svg class="cards__icon">
+                  <use xlink:href="./img/sprite.svg#likes" width="23" height="21"></use>
+                </svg>
+                1350</span>
             </div>
           </li>
           <li class="cards__item">
-            <img class="cards__image cards__image-vegetation" src="img/catalog-page/vegetation.jpg" width="280"
-              height="280" alt="Растительность.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog-page/vegetation/vegetation-desktop.jpg 1x, img/catalog-page/vegetation/vegetation-desktop@2x.jpg 2x" width="400" height="267">
+              <source media="(min-width: 768px)" srcset="img/catalog-page/vegetation/vegetation-tablet.jpg 1x, img/catalog-page/vegetation/vegetation-tablet@2x.jpg 2x" width="324" height="267">
+              <img class="cards__image cards__image-vegetation" src="img/catalog-page/vegetation/vegetation.jpg" srcset="img/catalog-page/vegetation/vegetation@2x.jpg 2x" width="280" height="280" alt="Растительность.">
+            </picture>
             <div class="cards__text cards__text--indent">
+              <div class="cards__wrapper">
               <h3 class="cards__title">Местная растительность</h3>
               <p class="cards__author">Автор фото: Сергей</p>
-              <span class="cards__like">Лайки 143</span>
+            </div>
+              <span class="cards__like">
+                <svg class="cards__icon">
+                  <use xlink:href="./img/sprite.svg#likes" width="23" height="21"></use>
+                </svg> 143</span>
             </div>
           </li>
           <li class="cards__item">
-            <img class="cards__image cards__image-north" src="img/catalog-page/north.jpg" width="280" height="280"
-              alt="Дорога на север.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog-page/north/north-desktop.jpg 1x, img/catalog-page/north/north-desktop@2x.jpg 2x" width="400" height="267">
+              <source media="(min-width: 768px)" srcset="img/catalog-page/north/north-tablet.jpg 1x, img/catalog-page/north/north-tablet@2x.jpg 2x" width="324" height="267">
+              <img class="cards__image cards__image-north" src="img/catalog-page/north/north.jpg" srcset="img/catalog-page/north/north@2x.jpg 2x" width="280" height="280" alt="Дорога на север.">
+            </picture>
             <div class="cards__text cards__text--indent">
+              <div class="cards__wrapper">
               <h3 class="cards__title">Дорога на север</h3>
               <p class="cards__author">Автор фото: Петр</p>
-              <span class="cards__like">Лайки 96</span>
+            </div>
+              <span class="cards__like">
+                <svg class="cards__icon">
+                  <use xlink:href="./img/sprite.svg#likes" width="23" height="21"></use>
+                </svg>96</span>
             </div>
           </li>
           <li class="cards__item">
-            <img class="cards__image cards__image-bridge" src="img/catalog-page/devil's-bridge.jpg" width="280"
-              height="280" alt="Мост дьявола.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog-page/bridge/devil's-bridge-desktop.jpg 1x, img/catalog-page/bridge/devil's-bridge-deskto@2x.jpg 2x" width="400" height="267">
+              <source media="(min-width: 768px)" srcset="img/catalog-page/bridge/devil's-bridge-tablet.jpg 1x, img/catalog-page/bridge/devil's-bridge-tablet@2x.jpg 2x" width="324" height="267">
+              <img class="cards__image cards__image-bridge" src="img/catalog-page/bridge/devil's-bridge.jpg" srcset="img/catalog-page/bridge/devil's-bridge@2x.jpg 2x" width="280" height="280" alt="Мост дьявола.">
+            </picture>
             <div class="cards__text cards__text--indent">
+              <div class="cards__wrapper">
               <h3 class="cards__title">Мост дьявола</h3>
               <p class="cards__author">Автор фото: Антон</p>
-              <span class="cards__like">Лайки 254</span>
+            </div>
+              <span class="cards__like">
+                <svg class="cards__icon" width="23" height="21">
+                  <use xlink:href="./img/sprite.svg#likes" width="23" height="21"></use>
+                </svg> 254</span>
             </div>
           </li>
         </ul>
@@ -99,26 +139,36 @@
             раз!</p>
         </div>
         <div class="doubt__presentation">
-          <img class="doubt__video" src="img/catalog-page/video-presentation.jpg" width="280" height="177"
-            alt="Видео презентация.">
+          <button class="doubt__button">
+            <span class="visually-hidden">Воспроизвести</span>
+          </button>
         </div>
       </section>
     </main>
     <footer class="main-footer main-footer--catalog">
       <span class="main-footer__hashtag">#visitsedona</span>
-      <ul class="main-footer__social social">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="#">
+      <ul class="main-footer__social">
+        <li class="main-footer__item">
+          <a class="main-footer__link" href="#">
             <span class="visually-hidden">Мы Вконтакте.</span>
+            <svg class="main-footer__icons" width="24" height="14">
+              <use xlink:href="./img/sprite.svg#vkontakte"></use>
+            </svg>
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="#">
+        <li class="main-footer__item">
+          <a class="main-footer__link" href="#">
+            <svg class="main-footer__icons" width="21" height="17">
+              <use xlink:href="./img/sprite.svg#telegram"></use>
+            </svg>
             <span class="visually-hidden">Мы в Телеграме.</span>
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">
+        <li class="main-footer__item">
+          <a class="main-footer__link" href="#">
+            <svg class="main-footer__icons" width="20" height="14">
+              <use xlink:href="./img/sprite.svg#youtube"></use>
+            </svg>
             <span class="visually-hidden">Мы в Ютобе.</span>
           </a>
         </li>
@@ -132,7 +182,7 @@
       </a>
     </footer>
   </div>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

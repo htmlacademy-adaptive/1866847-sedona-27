@@ -24,10 +24,26 @@
   gap: 6px;
 }
 
-.social__item {
+.main-footer__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 48px;
   height: 48px;
+  line-height: 0;
   background-color: $blue;
+}
+
+.main-footer__item:hover {
+  background-color: $bluegray;
+}
+
+.main-footer__item:active {
+  background: $darkblue;
+}
+
+.main-footer__link:active {
+  opacity: 0.3;
 }
 
 .main-footer__copyright {
