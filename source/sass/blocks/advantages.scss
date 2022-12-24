@@ -134,7 +134,7 @@
 
 @media (min-width: $tablet-width) {
   .advantages__image-city {
-    width: 100%;
+    width: 512px;
     height: 256px;
     display: block;
   }
@@ -214,7 +214,8 @@
 
 @media (min-width: $tablet-width) {
   .advantages__image-bridge {
-    min-height: 256px;
+    width: 512px;
+    height: 256px;
   }
 }
 
