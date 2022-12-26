@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-slace=1">
+  <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicons/aple.png">
+  <link rel="manifest" href="./img/favicons/manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+  <base href="https://htmlacademy-adaptive.github.io/1866847-sedona-27/6/">
+</head>
+
+<body class="page__body">
+  <div class="body-wrapper">
+    <header class="main-header">
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седона.">
+      </a>
+
+      <!-- <nav class="main-nav main-nav--closed main-nav--nojs"> -->
+      <!-- <nav class="main-nav main-nav--opened main-nav--nojs"> -->
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current" href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">HTML-academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <div class="hero">
+        <h1 class="visually-hidden">
+          Надпись и картинка Седона.
+        </h1>
+        <div class="hero__welcome hero__welcome--innerpage">
+          <img class="hero__image-sedona" src="img/catalog-page/sedona.svg" width="229" height="39"
+            alt="Надпись седона.">
+        </div>
+        <div class="hero__slogan hero__slogan--catalog">
+          <h2 class="hero__title-catalog">Фото и видео</h2>
+          <p class="hero__discription-catalog">Не можете решиться на путешествие из-за курса?<br class="hero__transfer">
+            Фотографии помогут вам забыть о
+            политике и экономике.</p>
+        </div>
+      </div>
+      <section class="cards">
+        <h2 class="visually-hidden">Фотографии.</h2>
+        <ul class="cards__list">
+          <li class="cards__item cards__item--full">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog-page/higway/higway-desktop.jpg 1x, img/catalog-page/higway/higway-desktop@2x.jpg 2x" width="1200" height="400">
+              <source media="(min-width: 768px)" srcset="img/catalog-page/higway/higway-tablet.jpg 1x, img/catalog-page/higway/higway-tablet@2x.jpg 2x" width="648" height="400">
+              <img class="cards__image cards__image-highway" src="img/catalog-page/higway/higway.jpg" srcset="img/catalog-page/higway/higway@2x.jpg 2x" width="280" height="280" alt="Просторы.">
+            </picture>
+            <div class="cards__text">
+              <div class="cards__wrapper">
+              <h3 class="cards__title">Неродные просторы</h3>
+              <p class="cards__author">Автор фото: Борис</p>
+            </div>
+              <span class="cards__like">
+                <svg class="cards__icon">
+                  <use xlink:href="./img/sprite.svg#likes" width="23" height="21"></use>
+                </svg>
+                1350</span>
+            </div>
+          </li>
+          <li class="cards__item">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog-page/vegetation/vegetation-desktop.jpg 1x, img/catalog-page/vegetation/vegetation-desktop@2x.jpg 2x" width="400" height="267">
+              <source media="(min-width: 768px)" srcset="img/catalog-page/vegetation/vegetation-tablet.jpg 1x, img/catalog-page/vegetation/vegetation-tablet@2x.jpg 2x" width="324" height="267">
+              <img class="cards__image cards__image-vegetation" src="img/catalog-page/vegetation/vegetation.jpg" srcset="img/catalog-page/vegetation/vegetation@2x.jpg 2x" width="280" height="280" alt="Растительность.">
+            </picture>
+            <div class="cards__text cards__text--indent">
+              <div class="cards__wrapper">
+              <h3 class="cards__title">Местная растительность</h3>
+              <p class="cards__author">Автор фото: Сергей</p>
+            </div>
+              <span class="cards__like">
+                <svg class="cards__icon">
+                  <use xlink:href="./img/sprite.svg#likes" width="23" height="21"></use>
+                </svg> 143</span>
+            </div>
+          </li>
+          <li class="cards__item">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog-page/north/north-desktop.jpg 1x, img/catalog-page/north/north-desktop@2x.jpg 2x" width="400" height="267">
+              <source media="(min-width: 768px)" srcset="img/catalog-page/north/north-tablet.jpg 1x, img/catalog-page/north/north-tablet@2x.jpg 2x" width="324" height="267">
+              <img class="cards__image cards__image-north" src="img/catalog-page/north/north.jpg" srcset="img/catalog-page/north/north@2x.jpg 2x" width="280" height="280" alt="Дорога на север.">
+            </picture>
+            <div class="cards__text cards__text--indent">
+              <div class="cards__wrapper">
+              <h3 class="cards__title">Дорога на север</h3>
+              <p class="cards__author">Автор фото: Петр</p>
+            </div>
+              <span class="cards__like">
+                <svg class="cards__icon">
+                  <use xlink:href="./img/sprite.svg#likes" width="23" height="21"></use>
+                </svg>96</span>
+            </div>
+          </li>
+          <li class="cards__item">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog-page/bridge/devil's-bridge-desktop.jpg 1x, img/catalog-page/bridge/devil's-bridge-deskto@2x.jpg 2x" width="400" height="267">
+              <source media="(min-width: 768px)" srcset="img/catalog-page/bridge/devil's-bridge-tablet.jpg 1x, img/catalog-page/bridge/devil's-bridge-tablet@2x.jpg 2x" width="324" height="267">
+              <img class="cards__image cards__image-bridge" src="img/catalog-page/bridge/devil's-bridge.jpg" srcset="img/catalog-page/bridge/devil's-bridge@2x.jpg 2x" width="280" height="280" alt="Мост дьявола.">
+            </picture>
+            <div class="cards__text cards__text--indent">
+              <div class="cards__wrapper">
+              <h3 class="cards__title">Мост дьявола</h3>
+              <p class="cards__author">Автор фото: Антон</p>
+            </div>
+              <span class="cards__like">
+                <svg class="cards__icon" width="23" height="21">
+                  <use xlink:href="./img/sprite.svg#likes" width="23" height="21"></use>
+                </svg> 254</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="doubt">
+        <div class="doubt__wrapper">
+          <h2 class="doubt__title">Все еще сомневаетесь?</h2>
+          <p class="doubt__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+            очередной
+            раз!</p>
+        </div>
+        <div class="doubt__presentation">
+          <button class="doubt__button">
+            <span class="visually-hidden">Воспроизвести</span>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer main-footer--catalog">
+      <span class="main-footer__hashtag">#visitsedona</span>
+      <ul class="main-footer__social">
+        <li class="main-footer__item">
+          <a class="main-footer__link" href="#">
+            <span class="visually-hidden">Мы Вконтакте.</span>
+            <svg class="main-footer__icons" width="24" height="14">
+              <use xlink:href="./img/sprite.svg#vkontakte"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="main-footer__item">
+          <a class="main-footer__link" href="#">
+            <svg class="main-footer__icons" width="21" height="17">
+              <use xlink:href="./img/sprite.svg#telegram"></use>
+            </svg>
+            <span class="visually-hidden">Мы в Телеграме.</span>
+          </a>
+        </li>
+        <li class="main-footer__item">
+          <a class="main-footer__link" href="#">
+            <svg class="main-footer__icons" width="20" height="14">
+              <use xlink:href="./img/sprite.svg#youtube"></use>
+            </svg>
+            <span class="visually-hidden">Мы в Ютобе.</span>
+          </a>
+        </li>
+      </ul>
+      <a class="main-footer__copyright" href="#">
+        <span class="main-footer__copyright-text">Разработано</span>
+        <svg class="main-footer__copyright-image" width="27" height="35" fill="none">
+          <path
+            d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
+        </svg>
+      </a>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
