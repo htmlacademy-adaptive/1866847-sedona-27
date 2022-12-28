@@ -107,16 +107,21 @@
 
 .main-footer__copyright:hover {
   color: $blue;
+  fill: $blue;
 }
 
 .main-footer__copyright:active {
   color: $mediumgray;
+  fill: $mediumgray;
 }
 
-.main-footer__copyright .main-footer__copyright-image:hover {
+.main-footer__copyright:hover .main-footer__copyright-image {
+  color: $blue;
   fill: $blue;
 }
 
-.main-footer__copyright .main-footer__copyright-image:active {
+.main-footer__copyright:active .main-footer__copyright-image {
+  color: $mediumgray;
   fill: $mediumgray;
 }
+
