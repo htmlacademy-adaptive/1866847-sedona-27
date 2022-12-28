@@ -59,19 +59,24 @@
       <section class="advantages">
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--filling">
-            <div class="advantages__info">
-              <h3 class="advantages__title advantages__title--lighter">Настоящий городок</h3>
-              <span class="advantages__number advantages__number--lighter">— №1 —</span>
-              <p class="advantages__description advantages__description--lighter">Седона не аттракцион для туристов,<br
-                  class="advantages__lighter"> там
-                течет
-                своя жизнь</p>
+            <div class="advantages__wrapper">
+              <div class="advantages__info">
+                <h3 class="advantages__title advantages__title--lighter">Настоящий городок</h3>
+                <span class="advantages__number advantages__number--lighter">— №1 —</span>
+                <p class="advantages__description advantages__description--lighter">Седона не аттракцион для
+                  туристов,<br class="advantages__lighter"> там
+                  течет
+                  своя жизнь</p>
+              </div>
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/home-page/photo-city-desctop@1x.jpg 1x, img/home-page/photo-city-desctop@1x@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/home-page/photo-city-tablet@1x.jpg 1x, img/home-page/photo-city-tablet@2x.jpg 2x">
+                <img class="advantages__image-city" src="img/home-page/photo-city@1x.jpg"
+                  srcset="img/home-page/photo-city@2x.jpg 2x" width="320" height="260" alt="Настоящий городок.">
+              </picture>
             </div>
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/home-page/photo-city-desctop@1x.jpg 1x, img/home-page/photo-city-desctop@1x@2x.jpg 2x" width="800" height="256">
-              <source media="(min-width: 768px)" srcset="img/home-page/photo-city-tablet@1x.jpg 1x, img/home-page/photo-city-tablet@2x.jpg 2x" width="512" height="256">
-              <img class="advantages__image-city" src="img/home-page/photo-city@1x.jpg" srcset="img/home-page/photo-city@2x.jpg 2x" width="320" height="260" alt="Настоящий городок.">
-            </picture>
             <ul class="advantages__sub-list">
               <li class="advantages__sub-item advantages__sub-item--housing">
                 <h3 class="advantages__title">Жилье</h3>
@@ -115,42 +120,45 @@
               </li>
             </ul>
           <li class="advantages__item advantages__item--filling advantages__item--revers">
-            <div class="advantages__aside">
-              <h3 class="advantages__title advantages__title--lighter">Там есть мост дьявола</h3>
-              <span class="advantages__number advantages__number--lighter">— №2 —</span>
-              <p class="advantages__description advantages__description--lighter">Да, по нему можно пройти!<br
-                  class="advantages__lighter"> Если вы
-                осмелитесь, конечно</p>
-            </div>
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/home-page/bridge-desctop@1x.jpg 1x, img/home-page/bridge-desctop@1x@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/home-page/bridge-tablet@1x.jpg 1x, img/home-page/bridge-tablet@1x@2x.jpg 2x">
-            <img class="advantages__image-bridge" src="img/home-page/bridge.jpg" srcset="(img/home-page/bridge@2x.jpg 2x)" width="320" height="260"
-              alt="Мост дьявола.">
+            <div class="advantages__wrapper">
+              <div class="advantages__aside">
+                <h3 class="advantages__title advantages__title--lighter">Там есть мост дьявола</h3>
+                <span class="advantages__number advantages__number--lighter">— №2 —</span>
+                <p class="advantages__description advantages__description--lighter">Да, по нему можно пройти!<br
+                    class="advantages__lighter"> Если вы
+                  осмелитесь, конечно</p>
+              </div>
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/home-page/bridge-desctop@1x.jpg 1x, img/home-page/bridge-desctop@1x@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/home-page/bridge-tablet@1x.jpg 1x, img/home-page/bridge-tablet@1x@2x.jpg 2x">
+                <img class="advantages__image-bridge" src="img/home-page/bridge.jpg"
+                  srcset="img/home-page/bridge@2x.jpg 2x" width="320" height="260" alt="Мост дьявола.">
               </picture>
-            <ul class="advantages__inner-list">
-              <li class="advantages__inner-item advantages__inner-item--darker">
-                <h3 class="advantages__title">Небольшая<br class="advantages__darker"> площадь</h3>
-                <p class="advantages__number">— №3 —</p>
-                <p class="advantages__description">Все интересные места находятся<br class="advantages__darker-inner">
-                  очень близко</p>
-              </li>
-              <li class="advantages__inner-item  advantages__inner-item--darker">
-                <h3 class="advantages__title">Красивая<br class="advantages__darker"> дорога</h3>
-                <p class="advantages__number">— №4 —</p>
-                <p class="advantages__description">Ехать в седону из Лас-вегаса<br class="advantages__darker-inner">
-                  совсем<br class="advantages__darker"> не скучно!</p>
-              </li>
-              <li class="advantages__inner-item  advantages__inner-item--darker">
-                <h3 class="advantages__title">Мало <br class="advantages__darker">туристов</h3>
-                <p class="advantages__number">— №5 —</p>
-                <p class="advantages__description">Большинство едет в Гранд Каньон<br class="advantages__darker-inner">
-                  и толпится там</p>
-              </li>
-            </ul>
+            </div>
           </li>
         </ul>
-
+        <ul class="advantages__inner-list">
+          <li class="advantages__inner-item advantages__inner-item--darker">
+            <h3 class="advantages__title">Небольшая<br class="advantages__darker"> площадь</h3>
+            <p class="advantages__number">— №3 —</p>
+            <p class="advantages__description">Все интересные места находятся<br class="advantages__darker-inner">
+              очень близко</p>
+          </li>
+          <li class="advantages__inner-item  advantages__inner-item--darker">
+            <h3 class="advantages__title">Красивая<br class="advantages__darker"> дорога</h3>
+            <p class="advantages__number">— №4 —</p>
+            <p class="advantages__description">Ехать в седону из Лас-вегаса<br class="advantages__darker-inner">
+              совсем<br class="advantages__darker"> не скучно!</p>
+          </li>
+          <li class="advantages__inner-item  advantages__inner-item--darker">
+            <h3 class="advantages__title">Мало <br class="advantages__darker">туристов</h3>
+            <p class="advantages__number">— №5 —</p>
+            <p class="advantages__description">Большинство едет в Гранд Каньон<br class="advantages__darker-inner">
+              и толпится там</p>
+          </li>
+        </ul>
       </section>
       <section class="appointment">
         <h2 class="appointment__title">Заинтересовались?</h2>
@@ -163,8 +171,8 @@
         <h3 class="visually-hidden">Карта.</h3>
         <iframe class="map__location"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2876552.54476748!2d-111.29109217598071!3d33.14478539021858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1670964660619!5m2!1sru!2sru"
-          width="600" height="350" alt="Карта расположение гостиницы Седона" style="border: none;" allowfullscreen=""
-          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          width="600" height="350" style="border: none;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
         <img class="map__image visually-hidden" src="img/home-page/map.jpg" width="320" height="350" alt="Карта.">
       </section>
     </main>

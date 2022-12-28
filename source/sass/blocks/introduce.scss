@@ -86,7 +86,7 @@
 .introduce__group--contacts .introduce__subgroup::before {
   position: absolute;
   content: "";
-  background: $summitsilver url("../../img/icons/phone.svg") center;
+  background: $summitsilver url("../img/icons/phone.svg") center;
   background-repeat: no-repeat;
   width: 58px;
   height: 58px;
@@ -96,7 +96,7 @@
 }
 
 .introduce__group--contacts .introduce__subgroup--email::before {
-  background: $summitsilver url("../../img/icons/email.svg") center;
+  background: $summitsilver url("../img/icons/email.svg") center;
   background-repeat: no-repeat;
 }
 
@@ -124,7 +124,7 @@
 }
 
 .introduce__group .introduce__radio-input:checked + .introduce__radio-text::before {
-  background-image: url("../../img/catalog-page/icons-radio.svg");
+  background-image: url("../img/catalog-page/icons-radio.svg");
   background-position: center;
 }
 
@@ -148,7 +148,7 @@
 }
 
 .introduce__group .introduce__checkbox-input:checked + .introduce__checkbox-text::before {
-  background-image: url("../../img/catalog-page/icons-checkbox.svg");
+  background-image: url("../img/catalog-page/icons-checkbox.svg");
   background-position: center;
 }
 

@@ -55,22 +55,31 @@
 .doubt__presentation {
   position: relative;
   width: 100%;
-  height: 177px;
-  background-image: url("../../img/catalog-page/video.jpg");
+  min-height: 177px;
+  background-image: url("../img/catalog-page/video/video.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/catalog-page/video@2x.jpg");
+    background-image: url("../img/catalog-page/video/video@2x.jpg");
     background-size: 100% auto;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .doubt__presentation {
-    height: 500px;
-    background-position: 50%;
-    background-size: 800px auto;
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/catalog-page/video/video-tablet.jpg");
+    min-height: 500px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog-page/video/video-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/catalog-page/video/video-desktop.jpg.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog-page/video/video-desktop.jpg@2x.jpg");
+    }
   }
 }
 
@@ -93,11 +102,9 @@
   width: 48px;
   height: 54px;
   background-color: rgba(255, 255, 255, 0.7);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   clip-path: polygon(0 0, 0% 100%, 100% 50%);
 }
 
