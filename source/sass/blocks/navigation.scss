@@ -106,22 +106,18 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .main-nav--opened .main-nav__item:focus {
+  .main-nav--opened .main-nav__link:focus {
     background-color: $bluegray;
   }
 
-  .main-nav--opened .main-nav__item:hover {
+  .main-nav--opened .main-nav__link:hover {
     background-color: $bluegray;
   }
 
-  .main-nav--opened .main-nav__item:active {
+  .main-nav--opened .main-nav__link:active {
     background-color: $darkblue;
+    color: rgba(255, 255, 255, 0.3);
   }
-}
-
-.main-nav__link:active {
-  color: $white;
-  opacity: 0.3;
 }
 
 .main-nav__link {
@@ -227,6 +223,12 @@
 
 @media (min-width: $tablet-width) {
   .main-nav__link:hover {
+    color: $blue;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__link:focus {
     color: $blue;
   }
 }

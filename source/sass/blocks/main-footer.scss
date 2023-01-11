@@ -24,7 +24,7 @@
   gap: 6px;
 }
 
-.main-footer__item {
+.main-footer__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,15 +34,20 @@
   background-color: $blue;
 }
 
-.main-footer__item:hover {
+.main-footer__link:hover {
   background-color: $bluegray;
 }
 
-.main-footer__item:active {
-  background: $darkblue;
+.main-footer__link:focus {
+  background-color: $darkblue;
 }
 
 .main-footer__link:active {
+  background: $darkblue;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.main-footer__link:active .main-footer__icons {
   opacity: 0.3;
 }
 
@@ -110,6 +115,11 @@
   fill: $blue;
 }
 
+.main-footer__copyright:focus {
+  color: $darkblue;
+  fill: $darkblue;
+}
+
 .main-footer__copyright:active {
   color: $mediumgray;
   fill: $mediumgray;
@@ -118,6 +128,11 @@
 .main-footer__copyright:hover .main-footer__copyright-image {
   color: $blue;
   fill: $blue;
+}
+
+.main-footer__copyright:focus .main-footer__copyright-image {
+  color: $darkblue;
+  fill: $darkblue;
 }
 
 .main-footer__copyright:active .main-footer__copyright-image {

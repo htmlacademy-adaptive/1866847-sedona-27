@@ -4,18 +4,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-slace=1">
+  <meta name="keywords" content="Седона, туризм">
+  <meta name="description" content="Официальный сайт города Седоны, в Аризоне. Здесь вы можете найти информацию о городе Седона и о наличии мест в гостиницах">
   <title>HTML Academy: Седона</title>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./img/favicons/aple.png">
   <link rel="manifest" href="./img/favicons/manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="css/style.min.css" as="style" crossorigin="anonymous">
+  <link rel="preload" href="js/script.js" as="script" crossorigin="anonymous">
+  <link rel="preload" href="img/logo.svg" as="image" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
   <div class="body-wrapper">
     <header class="main-header">
-      <a class="main-header__logo" href="index.html">
+      <a class="main-header__logo" href="index.html" aria-current="page">
         <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седона.">
       </a>
 
@@ -27,7 +36,7 @@
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--current " href="index.html">Главная</a>
+            <a class="main-nav__link main-nav__link--current " href="index.html" aria-current="page">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Фото и видео</a>
@@ -63,9 +72,7 @@
                 <h3 class="advantages__title advantages__title--lighter">Настоящий городок</h3>
                 <span class="advantages__number advantages__number--lighter">— №1 —</span>
                 <p class="advantages__description advantages__description--lighter">Седона не аттракцион для
-                  туристов,<br class="advantages__lighter"> там
-                  течет
-                  своя жизнь</p>
+                  туристов,<br class="advantages__lighter"> там течет своя жизнь</p>
               </div>
               <picture>
                 <source media="(min-width: 1200px)"
@@ -73,7 +80,7 @@
                 <source media="(min-width: 768px)"
                   srcset="img/home-page/photo-city-tablet@1x.jpg 1x, img/home-page/photo-city-tablet@2x.jpg 2x">
                 <img class="advantages__image-city" src="img/home-page/photo-city@1x.jpg"
-                  srcset="img/home-page/photo-city@2x.jpg 2x" width="320" height="260" alt="Настоящий городок.">
+                  srcset="img/home-page/photo-city@2x.jpg 2x" width="320" height="260" alt="Настоящий городок." loading="lazy">
               </picture>
             </div>
             <ul class="advantages__sub-list">
@@ -118,7 +125,7 @@
                 <source media="(min-width: 768px)"
                   srcset="img/home-page/bridge-tablet@1x.jpg 1x, img/home-page/bridge-tablet@1x@2x.jpg 2x">
                 <img class="advantages__image-bridge" src="img/home-page/bridge.jpg"
-                  srcset="img/home-page/bridge@2x.jpg 2x" width="320" height="260" alt="Мост дьявола.">
+                  srcset="img/home-page/bridge@2x.jpg 2x" width="320" height="260" alt="Мост дьявола." loading="lazy">
               </picture>
             </div>
           </li>
