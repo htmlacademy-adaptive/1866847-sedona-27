@@ -8,6 +8,7 @@
   text-decoration: none;
   border: none;
   display: inline-block;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -20,5 +21,11 @@
 }
 
 .button:disabled {
+  pointer-events: none;
+  background-color: $verylightgray;
+}
+
+.appointment__search--disabled {
+  pointer-events: none;
   background-color: $verylightgray;
 }
