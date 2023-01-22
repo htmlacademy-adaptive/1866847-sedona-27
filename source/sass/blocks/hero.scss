@@ -40,6 +40,12 @@
   background-position: center bottom;
 }
 
+@media (min-width: $desktop-width) {
+  .hero__welcome::after {
+    margin-bottom: -2px;
+  }
+}
+
 .hero__image-welcome {
   display: block;
   margin: 0 auto;
@@ -114,8 +120,7 @@
 
 .hero__title {
   @include fontsizes(700, 18px, 26px);
-  margin: auto;
-  margin-bottom: 35px;
+  margin: 0 9px 36px 7px;
 }
 
 .hero__description {
@@ -127,11 +132,11 @@
   position: relative;
   text-align: center;
   text-transform: uppercase;
-  padding: 32px 18px 16px;
+  padding: 33px 18px 15px;
 }
 
 .hero__slogan--catalog {
-  padding: 37px 20px 25px;
+  padding: 38px 20px 36px;
   border-bottom: 1px solid $verylightgray;
 }
 
@@ -175,27 +180,94 @@
 }
 
 @media (min-width: $tablet-width) {
-  .hero__transition {
-    display: none;
-  }
-}
-
-@media (min-width: $tablet-width) {
   .hero__slogan {
     max-width: 520px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 48px 0 55px 0;
+    padding: 48px 0 54px 0;
     margin: 0 auto;
   }
 }
 
 @media (min-width: $tablet-width) {
   .hero__title {
+    @include fontsizes(700, 21px, 26px);
     width: 520px;
     margin: 0;
     margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero__slogan {
+    max-width: 484px;
+    padding: 60px 0 44px 0;
+    margin: 0 auto;
+    margin-left: 356px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero__title {
+    @include fontsizes(700, 21px, 26px);
+    width: 484px;
+    margin-bottom: 29px;
+  }
+}
+
+.hero__title-catalog {
+  @include fontsizes(700, 18px, 26px);
+  margin: 0 0 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .hero__slogan--catalog {
+    max-width: 458px;
+    padding: 66px 0 80px;
+    margin: 0 auto;
+    border: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero__title-catalog {
+    @include fontsizes(700, 30px, 26px);
+    margin-bottom: 33px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero__title-catalog {
+    margin-bottom: 32px;
+  }
+}
+
+.hero__discription-catalog {
+  margin: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .hero__slogan--catalog {
+    max-width: 458px;
+    padding: 100px 0 81px 0;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero__discription-catalog {
+    margin-bottom: 8px;
+    margin-right: 2px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero__slogan--form {
+    max-width: 435px;
+    padding: 64px 0 105px 0;
+    margin: 0 auto;
+    border-bottom: none;
   }
 }
 
@@ -209,69 +281,6 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .hero__slogan {
-    max-width: 484px;
-    padding: 59px 0 44px 0;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .hero__title {
-    @include fontsizes(700, 21px, 26px);
-    width: 484px;
-  }
-}
-
-.hero__title-catalog {
-  @include fontsizes(700, 18px, 26px);
-  margin: 0 0 23px;
-}
-
-@media (min-width: $tablet-width) {
-  .hero__slogan--catalog {
-    max-width: 458px;
-    padding: 66px 0 67px;
-    margin: 0 auto;
-    border: none;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .hero__title-catalog {
-    @include fontsizes(700, 30px, 26px);
-    margin-bottom: 46px;
-  }
-}
-
-.hero__discription-catalog {
-  margin: 0;
-}
-
-@media (min-width: $desktop-width) {
-  .hero__slogan--catalog {
-    max-width: 458px;
-    padding: 100px 0 65px 0;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .hero__discription-catalog {
-    margin-bottom: 8px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .hero__slogan--form {
-    max-width: 435px;
-    padding: 64px 0 102px 0;
-    margin: 0 auto;
-    border-bottom: none;
-  }
-}
-
 .hero__transfer-form {
   display: none;
 }
@@ -282,23 +291,22 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .hero__transfer-form {
-    display: none;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .hero__slogan--form .hero__title {
     @include fontsizes(700, 30px, 26px);
-    margin-bottom: 20px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero__slogan--form .hero__title {
+    margin-bottom: 32px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .hero__slogan--form {
-    max-width: 434px;
-    padding: 115px 0 67px 0;
+    padding: 115px 0 70px 0;
     margin: 0 auto;
   }
 }

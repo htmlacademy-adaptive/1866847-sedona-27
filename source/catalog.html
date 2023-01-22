@@ -4,12 +4,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-slace=1">
+  <meta name="keywords" content="Седона, туризм">
+  <meta name="description" content="Официальный сайт города Седоны, в Аризоне. Здесь вы можете найти информацию о городе Седона и о наличии мест в гостиницах">
   <title>HTML Academy: Седона</title>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./img/favicons/aple.png">
   <link rel="manifest" href="./img/favicons/manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="css/style.min.css" as="style" crossorigin="anonymous">
+  <link rel="preload" href="js/script.js" as="script" crossorigin="anonymous">
+  <link rel="preload" href="img/logo.svg" as="image" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -30,7 +39,7 @@
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--current" href="catalog.html">Фото и видео</a>
+            <a class="main-nav__link main-nav__link--current" href="catalog.html" aria-current="page">Фото и видео</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">Форма отзыва</a>
@@ -61,6 +70,7 @@
         <h2 class="visually-hidden">Фотографии.</h2>
         <ul class="cards__list">
           <li class="cards__item cards__item--full">
+            <a class="cards__link" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
                 srcset="img/catalog-page/higway/higway-desktop.webp 1x, img/catalog-page/higway/higway-desktop@2x.webp 2x">
@@ -74,8 +84,9 @@
               <source media="(min-width: 768px)"
                 srcset="img/catalog-page/higway/higway-tablet.jpg 1x, img/catalog-page/higway/higway-tablet@2x.jpg 2x">
               <img class="cards__image cards__image-highway" src="img/catalog-page/higway/higway.jpg"
-                srcset="img/catalog-page/higway/higway@2x.jpg 2x" width="280" height="280" alt="Просторы.">
+                srcset="img/catalog-page/higway/higway@2x.jpg 2x" width="280" height="280" alt="Просторы." loading="lazy">
             </picture>
+          </a>
             <div class="cards__text">
               <div class="cards__wrapper">
                 <h3 class="cards__title">Неродные просторы</h3>
@@ -89,6 +100,7 @@
             </div>
           </li>
           <li class="cards__item">
+            <a class="cards__link" href="#">
             <picture>
               <source media="(min-width: 1200px)"
                 srcset="img/catalog-page/vegetation/vegetation-desktop.jpg 1x, img/catalog-page/vegetation/vegetation-desktop@2x.jpg 2x">
@@ -96,8 +108,9 @@
                 srcset="img/catalog-page/vegetation/vegetation-tablet.jpg 1x, img/catalog-page/vegetation/vegetation-tablet@2x.jpg 2x">
               <img class="cards__image cards__image-vegetation" src="img/catalog-page/vegetation/vegetation.jpg"
                 srcset="img/catalog-page/vegetation/vegetation@2x.jpg 2x" width="280" height="280"
-                alt="Растительность.">
+                alt="Растительность." loading="lazy">
             </picture>
+          </a>
             <div class="cards__text cards__text--indent">
               <div class="cards__wrapper">
                 <h3 class="cards__title">Местная растительность</h3>
@@ -110,6 +123,7 @@
             </div>
           </li>
           <li class="cards__item">
+            <a class="cards__link" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
                 srcset="img/catalog-page/north/north-desktop.webp 1x, img/catalog-page/north/north-desktop@2x.webp 2x">
@@ -123,8 +137,9 @@
               <source media="(min-width: 768px)"
                 srcset="img/catalog-page/north/north-tablet.jpg 1x, img/catalog-page/north/north-tablet@2x.jpg 2x">
               <img class="cards__image cards__image-north" src="img/catalog-page/north/north.jpg"
-                srcset="img/catalog-page/north/north@2x.jpg 2x" width="280" height="280" alt="Дорога на север.">
+                srcset="img/catalog-page/north/north@2x.jpg 2x" width="280" height="280" alt="Дорога на север." loading="lazy">
             </picture>
+          </a>
             <div class="cards__text cards__text--indent">
               <div class="cards__wrapper">
                 <h3 class="cards__title">Дорога на север</h3>
@@ -137,14 +152,16 @@
             </div>
           </li>
           <li class="cards__item">
+            <a class="cards__link" href="#">
             <picture>
               <source media="(min-width: 1200px)"
                 srcset="img/catalog-page/bridge/devil's-bridge-desktop.jpg 1x, img/catalog-page/bridge/devil's-bridge-deskto@2x.jpg 2x">
               <source media="(min-width: 768px)"
                 srcset="img/catalog-page/bridge/devil's-bridge-tablet.jpg 1x, img/catalog-page/bridge/devil's-bridge-tablet@2x.jpg 2x">
               <img class="cards__image cards__image-bridge" src="img/catalog-page/bridge/devil's-bridge.jpg"
-                srcset="img/catalog-page/bridge/devil's-bridge@2x.jpg 2x" width="280" height="280" alt="Мост дьявола.">
+                srcset="img/catalog-page/bridge/devil's-bridge@2x.jpg 2x" width="280" height="280" alt="Мост дьявола." loading="lazy">
             </picture>
+          </a>
             <div class="cards__text cards__text--indent">
               <div class="cards__wrapper">
                 <h3 class="cards__title">Мост дьявола</h3>
