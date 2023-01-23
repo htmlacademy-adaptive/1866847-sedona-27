@@ -21,6 +21,11 @@
   padding: 16px 49px;
 }
 
+.appointment__search--disabled {
+  pointer-events: none;
+  background-color: $verylightgray;
+}
+
 @media (min-width: $tablet-width) {
   .appointment {
     text-align: center;

@@ -464,13 +464,8 @@
 @media (min-width: $desktop-width) {
   .introduce__list--radio {
     column-gap: 28px;
-    padding: 0 53px 0 53px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .introduce__radio-text--indent {
-    min-width: 238px;
+    padding: 0 11px 0 53px;
+    justify-content: space-between;
   }
 }
 
@@ -489,15 +484,15 @@
 }
 
 @media (min-width: $desktop-width) {
-  .introduce__list--checkbox {
-    column-gap: 64px;
-    padding: 31px 44px 31px 44px;
+  .introduce__checkbox-text {
+    min-width: initial;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .introduce__checkbox-text--indent {
-    min-width: 153px;
+  .introduce__list--checkbox {
+    column-gap: inherit;
+    padding: 31px 44px 31px 44px;
   }
 }
 
@@ -538,12 +533,6 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .main-footer--form .main-footer__copyright-image {
-    margin-left: 9px;
-  }
-}
-
 .introduce__group--present .introduce__input::placeholder {
   color: $black;
 }
@@ -558,22 +547,6 @@
 @media (min-width: $desktop-width) {
   .introduce__wrapper {
     padding: 0 96px;
-  }
-}
-
-.main-footer--form {
-  padding: 28px 0 23px;
-}
-
-@media (min-width: $tablet-width) {
-  .main-footer--form {
-    padding: 36px 60px 36px 45px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-footer--form {
-    padding: 36px 120px 36px 104px;
   }
 }
 
