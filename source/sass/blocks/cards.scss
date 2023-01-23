@@ -56,6 +56,17 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .cards__list {
+    position: relative;
+    margin: 0;
+    display: grid;
+    justify-content: center;
+    width: 1200px;
+    grid-template-columns: 400px 400px 400px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .cards__item {
     width: 50%;
@@ -130,10 +141,12 @@
 
 @media (min-width: $desktop-width) {
   .cards__text {
-    position: relative;
+    position: absolute;
+    content: "";
     background: rgba(0, 0, 0, 0.3);
-    top: -80px;
-    margin-bottom: -80px;
+    right: 0;
+    bottom: 0;
+    left: 0;
     color: $white;
     padding: 22px 20px 15px 21px;
   }
@@ -162,6 +175,7 @@
 
 @media (min-width: $desktop-width) {
   .cards__item {
+    position: relative;
     width: auto;
     min-height: 267px;
   }
@@ -171,6 +185,7 @@
   .cards__item--full {
     width: 100%;
     min-height: 400px;
+    grid-column: 1/-1;
   }
 }
 

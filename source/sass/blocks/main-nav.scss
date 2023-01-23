@@ -1,5 +1,3 @@
-
-
 .main-nav__toggle {
   position: absolute;
   top: 17px;
@@ -262,11 +260,9 @@
 
 @media (min-width: $mobile-width-only) {
   .main-nav--nojs .main-nav__list {
+    margin-top: 40px;
     width: 100%;
     background-color: rgb(129, 179, 210);
-    position: absolute;
-    z-index: 1;
-    margin-top: -56px;
     min-height: 0;
     display: inline-block;
   }
