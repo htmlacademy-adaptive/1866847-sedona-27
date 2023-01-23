@@ -1,83 +1,79 @@
-.modal {
+.shipped {
   position: relative;
-  padding: 45px 42px 35px 41px;
   margin: auto;
   background-color: $white;
 }
 
-.modal__title {
+.shipped__page {
+  min-width: 244px;
+  min-height: 156px;
+  padding: 39px 39px 30px 37px;
+}
+
+.shipped__title {
   @include fontsizes(700, 18px, 26px);
   text-align: center;
   margin: 0 0 25px;
   text-transform: uppercase;
 }
 
-.modal__description {
+.shipped__description {
   @include fontsizes(400, 14px, 21px);
   color: $lightblack;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 0 28px;
+  margin: 0;
+  margin-bottom: 21px;
 }
 
-.modal__button {
+.shipped__button {
   @include fontsizes(700, 18px, 26px);
-  min-width: 180px;
-  padding: 18px 64px 14px 63px;
+  min-width: 280px;
+  padding: 18px 62px 14px 60px;
   margin: 0 auto;
   display: block;
 }
 
 @media (min-width: $tablet-width) {
-  .modal {
-    min-width: 400px;
-    padding: 50px 47px 49px 46px;
-  }
-}
-
-@media (min-width: $mobile-width-only) {
-  .modal__indent {
-    display: none;
+  .shipped {
+    min-width: 640px;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .modal__indent {
-    display: inline-block;
+  .shipped__page {
+    padding: 53px 99px 30px 97px;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .modal__title {
-    @include fontsizes(700, 30px, 40px);
-    margin-bottom: 26px;
+  .shipped__title {
+    @include fontsizes(700, 30px, 26px);
   }
 }
 
 @media (min-width: $tablet-width) {
-  .modal__description {
-    margin-bottom: 42px;
+  .shipped__description {
+    margin-bottom: 25px;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .modal__button {
+  .shipped__button {
     @include fontsizes(700, 21px, 26px);
-    min-width: 272px;
-    margin: 0 auto;
-    padding: 18px 108px 14px 107px;
-    display: block;
+    min-width: 458px;
+    padding: 18px 140px 14px 139px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .modal {
-    padding-top: 48px;
+  .shipped__page {
+    padding: 51px 99px 28px 97px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .modal__description {
-    margin-bottom: 44px;
+  .shipped__title {
+    margin-bottom: 29px;
   }
 }
